@@ -1,0 +1,232 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-image: url('cookbook.jpg');
+    background-size:cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 150px;
+    font-size: 2em;
+  }
+  body {
+    font-family: 'Merriweather', serif;
+    background-color: #dc8c85;
+    color: #783e32;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ffd0be;
+  }
+  
+  h1 {
+    color: #b24451;
+    font-size: 5cap;
+  }
+  
+  h2 {
+    font-size: 45px;
+    color: #783e32;
+    padding: 10px;
+    background-color: #ffd0be;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .h2-container {
+    background-color: #ffd0be;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .h2-container h2 {
+    font-size: 45px;
+    color: #783e32;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    display: block;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 45px;
+    color: #783e32;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Navigation */
+  
+  nav {
+    background-color: #ffeddf;
+    padding: 10px;
+    text-align: center ;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #a04844;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #d0545a;
+  }
+  
+  /* Festive Specials */
+  
+  #festive-specials {
+    background-color: #dc8c85;
+    padding: 20px;
+  }
+  
+  .dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #d47c64;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffeddf;
+    width: 80%;
+    margin: 20px auto; 
+  }
+  
+  .dish img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .dish h3 {
+    margin-top: 0;
+    color: #d0545a;
+  }
+  
+  .dish p {
+    margin-bottom: 10px;
+  }
+  footer {
+    background-color: #ffd0be;
+    color: #d0545a;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  /* Contact Form */
+  #contact-us {
+    text-align: center; 
+  }
+  
+  #contact-us form {
+    display: inline-block; 
+    text-align: left; 
+    background-color: #fedcc8;
+    padding: 120px;
+    width:80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-us label {
+    display: block; 
+    margin-bottom: 10px;
+  }
+  
+  #contact-us input, #contact-us textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact-us input[type="submit"] {
+    background-color: #d0545a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact-us input[type="submit"]:hover {
+    background-color: #d47c64;
+  }
+  /* Responsive Design */
+  
+  @media only screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin-right: 0;
+    }
+    #festive-specials section {
+      width: 100%;
+      margin: 20px 0;
+    }
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    input, textarea {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    img {
+      height: 100px;
+    }
+    #contact-us {
+      padding: 10px;
+    }
+    form {
+      padding: 10px;
+    }
+    input, textarea {
+      padding: 5px;
+    }
+  }
